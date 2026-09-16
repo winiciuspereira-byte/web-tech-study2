@@ -8,12 +8,13 @@ import NotFound from './Pages/NotFound';
 export default function Router() {
     return (
         <BrowserRouter>
-            <Nav /> {/* O Nav fica aqui dentro guardado pelo BrowserRouter */}
+            <Nav />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/sobre" element={<Sobre />} />
-                <Route path="/faq" element={<Faq />} /> {/* 2. Adicionada a rota do FAQ */}
+                <Route path="/faq" element={<Faq />} /> =
                 <Route path="*" element={<NotFound />} />
+                <Route path="/usuarios" element={<Usuarios />} /> 
             </Routes>
         </BrowserRouter>
     );
