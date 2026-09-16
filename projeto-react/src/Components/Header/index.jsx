@@ -1,15 +1,26 @@
-import React from 'react'
-import "./Header.css"
+import "./Header.css";
 
-
-export default function index() {
+function Header() {
   return (
     <header className="header">
-        <section className="title-conta">
-            <h1 className="title">Titulo Principal</h1>
-            <h2>Lorem ipsum</h2>
-        </section>
+      <div className="header-container">
+        <div className="logo">
+          <h1>Sabor & Cia</h1>
+        </div>
+
+        <nav className="menu">
+          <a href="#inicio">Início</a>
+          <a href="#cardapio">Cardápio</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <button className="header-button">
+          Fazer pedido
+        </button>
+      </div>
     </header>
-  )
+  );
 }
-    
+
+export default Header;
