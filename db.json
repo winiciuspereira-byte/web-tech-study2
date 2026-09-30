@@ -1,0 +1,19 @@
+{
+  "cadastroNews": [
+    {
+      "id": 1,
+      "nome": "Maria Silva",
+      "email": "maria@exemplo.com"
+    },
+    {
+      "id": 2,
+      "nome": "João Souza",
+      "email": "joao@exemplo.com"
+    },
+    {
+      "nome": "Teste React",
+      "email": "teste@react.com",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+.cadastro-news {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.cadastro-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cadastro-header h1 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.cadastro-header p {
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+.cadastro-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.cadastro-form,
+.cadastro-lista {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  padding: 1.5rem;
+}
+
+.cadastro-form h2,
+.cadastro-lista h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input {
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #c3280d;
+  box-shadow: 0 0 0 4px rgba(195, 40, 13, 0.12);
+}
+
+.btn-submit {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #c3280d, #dc6407);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-1px);
+  opacity: 0.98;
+}
+
+.btn-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-status {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.form-status.success {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.form-status.error {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.lista-news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.lista-news li {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+
+.lista-news strong {
+  display: block;
+  color: #0f172a;
+  margin-bottom: 0.3rem;
+}
+
+.lista-news span {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.empty-state {
+  color: #64748b;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .cadastro-layout {
+    grid-template-columns: 1fr;
+  }
+}
